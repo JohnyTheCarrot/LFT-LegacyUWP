@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest" xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10" IgnorableNamespaces="uap mp">
+  <Identity Name="52729AluminiumTech.LinusForumTipsMessenger" Publisher="CN=7597FB63-211E-47C3-95FB-0206DFA089D9" Version="1.7.10.0" />
+  <mp:PhoneIdentity PhoneProductId="50ae11e2-7941-4891-b11a-28ce61fd273b" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
+  <Properties>
+    <DisplayName>Linus Forum Tips UWP (Unofficial)</DisplayName>
+    <PublisherDisplayName>AluminiumTech</PublisherDisplayName>
+    <Logo>Assets\StoreLogo.png</Logo>
+  </Properties>
+  <Dependencies>
+    <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.0.0" MaxVersionTested="10.0.0.0" />
+  </Dependencies>
+  <Resources>
+    <Resource Language="x-generate" />
+  </Resources>
+  <Applications>
+    <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="LinusForumTips.App">
+      <uap:VisualElements DisplayName="Linus Forum Tips UWP (Unofficial)" Square150x150Logo="Assets\Square150x150Logo.png" Square44x44Logo="Assets\Square44x44Logo.png" Description="Experience Linus Tech Tips unlike ever before with the unofficial Linus Forum Tips app for Windows 10." BackgroundColor="transparent">
+        <uap:LockScreen Notification="badgeAndTileText" BadgeLogo="Assets\BadgeLogo.png" />
+        <uap:SplashScreen Image="Assets\SplashScreen.png" BackgroundColor="#333232" />
+        <uap:DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png" Square310x310Logo="Assets\Square310x310Logo.png" Square71x71Logo="Assets\Square71x71Logo.png">
+          <uap:TileUpdate Recurrence="halfHour" UriTemplate="http://ds.winappstudio.com/api/tile10?config=VQIAAB~LCAAAAAAABACNkTFPwzAQhf~LZw8JKkXN1haEEJQWEtQBMZj0mli1nehiV42i/HfOcSKYAGXxvXv3vrPTsdsma2tgyZzTcV2ZoyxY0rEXB9iGDstLYQyohvEgk/QkjWsyyMtM1l7f4gEwTDsUVlbGhwzqivxRT5als~UjUDVfLG5mpGSgayUseGsmFTwL7XE7gBNFrlCYgzS0TUSryYas7eig7j1WjsjJe8dS9/mj2oMsSsuSOIo84WJTK/LTlHOnQIOxweq7nk17WxIpOJNWAaXvUdQsOQrVAGcbaei6QDPGKUW1uIx1zD3cj0ze1La~mnG2VLIweoj1t3/QooCQ0PO/0Rbdr~Trb3KwjuD4f~AQN7boBTGnDYbyDRUt8Qq6OsNGYCHNRFhjVQ9vuD0D0r8Yzjslcgiwq77/GL7~CxhzXfpVAgAA" />
+          <uap:ShowNameOnTiles>
+            <uap:ShowOn Tile="square150x150Logo" />
+            <uap:ShowOn Tile="square310x310Logo" />
+          </uap:ShowNameOnTiles>
+        </uap:DefaultTile>
+      </uap:VisualElements>
+    </Application>
+  </Applications>
+  <Capabilities>
+    <Capability Name="internetClient" />
+  </Capabilities>
+</Package>
